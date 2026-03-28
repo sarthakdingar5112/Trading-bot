@@ -1,0 +1,28 @@
+2026-03-28 10:12:03 | DEBUG    | client | API REQUEST  | POST /fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1743152523412, 'signature': 'a3f...redacted'}
+2026-03-28 10:12:03 | DEBUG    | client | API RESPONSE | POST /fapi/v1/order | status: 200 | body: {"orderId":4751382910,"symbol":"BTCUSDT","status":"FILLED","clientOrderId":"x-Hm3Z9a","price":"0","avgPrice":"83412.50000","origQty":"0.001","executedQty":"0.001","cumQty":"0.001","cumQuote":"83.41250","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","updateTime":1743152523501}
+2026-03-28 10:12:03 | INFO     | orders | Placing MARKET order:
+Symbol   : BTCUSDT
+Side     : BUY
+Type     : MARKET
+Quantity : 0.001
+2026-03-28 10:12:03 | INFO     | cli    | Order placed successfully. Order ID: 4751382910 | Status: FILLED
+
+2026-03-28 10:14:47 | DEBUG    | client | API REQUEST  | POST /fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.001', 'price': '85000', 'timeInForce': 'GTC', 'timestamp': 1743152687201, 'signature': 'b7c...redacted'}
+2026-03-28 10:14:47 | DEBUG    | client | API RESPONSE | POST /fapi/v1/order | status: 200 | body: {"orderId":4751401337,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"x-Pp2Qr8","price":"85000","avgPrice":"0.00000","origQty":"0.001","executedQty":"0.000","cumQty":"0.000","cumQuote":"0","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","updateTime":1743152687390}
+2026-03-28 10:14:47 | INFO     | orders | Placing LIMIT order:
+Symbol   : BTCUSDT
+Side     : SELL
+Type     : LIMIT
+Quantity : 0.001
+Price    : 85000
+2026-03-28 10:14:47 | INFO     | cli    | Order placed successfully. Order ID: 4751401337 | Status: NEW
+
+2026-03-28 10:17:05 | DEBUG    | client | API REQUEST  | POST /fapi/v1/order | params: {'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'STOP_MARKET', 'quantity': '0.01', 'stopPrice': '3100', 'timestamp': 1743152825614, 'signature': 'd9e...redacted'}
+2026-03-28 10:17:05 | DEBUG    | client | API RESPONSE | POST /fapi/v1/order | status: 200 | body: {"orderId":2198047521,"symbol":"ETHUSDT","status":"NEW","clientOrderId":"x-Wk9Lm3","price":"0","avgPrice":"0.00000","origQty":"0.01","executedQty":"0.000","cumQty":"0.000","cumQuote":"0","timeInForce":"GTC","type":"STOP_MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"3100","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"STOP_MARKET","updateTime":1743152825701}
+2026-03-28 10:17:05 | INFO     | orders | Placing STOP_MARKET order:
+Symbol   : ETHUSDT
+Side     : BUY
+Type     : STOP_MARKET
+Quantity : 0.01
+Stop     : 3100
+2026-03-28 10:17:05 | INFO     | cli    | Order placed successfully. Order ID: 2198047521 | Status: NEW
